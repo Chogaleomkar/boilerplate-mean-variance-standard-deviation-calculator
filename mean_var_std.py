@@ -13,12 +13,12 @@ def calculate(input_list):
         array_3x3.mean(axis=1).tolist(), 
         np.mean(array_3x3).tolist()
     ]
-    calculations['variance'] = [  # Renamed 'var' to 'variance' to match the expected keys
+    calculations['variance'] = [ 
         array_3x3.var(axis=0).tolist(), 
         array_3x3.var(axis=1).tolist(), 
         np.var(array_3x3).tolist()
     ]
-    calculations['standard deviation'] = [  # Renamed 'std' to 'standard deviation'
+    calculations['standard deviation'] = [ 
         array_3x3.std(axis=0).tolist(), 
         array_3x3.std(axis=1).tolist(), 
         np.std(array_3x3).tolist()
